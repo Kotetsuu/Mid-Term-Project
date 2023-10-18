@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="products">
+    <div class="product">
+      <img src="product1.jpg" alt="product1">
+      <h3>iPad Air</h3>
+      <p>The iPad Air is equipped with the A14 Bionic chip, providing very high performance for most everyday tasks and applications.</p>
+      <span>$800</span>
+      <button>Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2">
+      <h3>iPad Pro</h3>
+      <p>The iPad Pro features an even more powerful M1 chip. The M1 chip offers desktop-class performance, making it suitable for professional tasks and graphics processing.</p>
+      <span>$1500</span>
+      <button>Add to Cart</button>
+      <script>
+        var button = document.getElementById("redirectButton");
+
+        button.addEventListener("click", function() {
+            var redirectUrl = "https://www.apple.com/ca/ipad-pro/?afid=p238%7Cs0xk854YD-dc_mtid_1870765e38482_pcrid_647156833130_pgrid_117378708841_pntwk_g_pchan__pexid__&cid=aos-ca-kwGO-ipad--slid---product-"; 
+            window.location.href = redirectUrl;
+        });
+    </script>
+    </div>
+    
+   
+  </section>
+
+  <footer>
+  
+  </footer>
+</body>
+</html>
